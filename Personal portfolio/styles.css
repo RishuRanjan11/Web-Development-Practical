@@ -1,0 +1,465 @@
+*{
+    margin: 0;
+    scroll-behavior: smooth;
+}
+body{
+    background-color: #0f0e17;
+   
+}
+
+#nav-bar{
+    
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 10px 0;
+    background-color: #0f0e17;
+}
+.brand{
+    margin-right: auto;
+    margin-left: 50px;
+    
+}
+#brand-name{
+    
+    text-decoration: none;
+    font-size: 2.3rem;
+    color: #ff0000;
+}
+
+#brand-name img{
+    width: 7%;
+}
+.nav-links{
+    display: flex;
+    text-decoration: none;
+    list-style: none;
+    font-family: serif;
+    
+}
+.nav-links a{
+    display: flex;
+    color: aliceblue;
+    padding: 0 30px;
+    font-size: 1.5rem;
+    align-items: center;
+    justify-content: center;
+}
+.nav-links a:hover{
+    text-decoration: underline;
+    color: red;
+}
+section{
+    padding: 70px 0;
+    min-height: 100vh;
+}
+
+#contacts{
+    padding: 70px 0;
+    min-height: 75vh;
+}
+#welcome-section{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+#welcome-section h1{
+    margin-top: 5vh;
+    margin-right: 50vh;
+
+}
+#welcome-section #tagline{
+    color: #fffffe;
+    font-size: 2rem;
+    margin-right: 50vh;
+}
+
+#name {
+    color: red; /* Adjust color as needed */
+}
+
+
+/* Add styles for the content container */
+.content-container {
+    display: flex;
+    justify-content: space-between; /* Align items with space between */
+    align-items: center; /* Center items vertically */
+    max-width: 1300px;
+    margin: auto;
+    padding: 0 20px; /* Add some padding to the sides */
+}
+
+
+#gapdist{
+    width: 10%;
+}
+
+/* Update other styles as needed */
+
+#profilepic {
+    text-align: center;
+    border: 2px solid burlywood; /* Change the border style */
+    border-radius: 10px;
+    box-shadow: 2px 4px 20px burlywood;
+    width: 47%;
+    margin-right: auto; /* Add margin-right: auto to center the image */
+    margin-left: auto; /* Add margin-left: auto to center the image */
+}
+
+#profilepic img {
+    width: 100%; /* Adjust the width of the image */
+    height: auto; /* Maintain the aspect ratio */
+}
+
+/* Update the CSS for the about section */
+.aboutme {
+    width: 50%; /* Adjust the width to make it side by side with the image */
+    text-align: left; /* Align text to the left */
+    margin-top: 11vh;
+    padding-right: 20px; /* Add some padding to separate the text from the image */
+}
+
+#about {
+    padding: 20px;
+    color: burlywood;
+    font-size: 1.3rem;
+    max-width: 100%; /* Adjust the max-width to fit the container */
+    text-align: justify;
+    box-shadow: 2px 4px 30px rgb(89, 89, 89);
+    
+    border-radius: 20px;
+}
+
+/* Remove the unnecessary CSS for #profilepic img */
+/* Remove the unnecessary CSS for .project-tile */
+
+
+h1{
+    color: #fffffe;
+    font-size: 5rem;
+    margin-top: 10vh;
+}
+h3{
+    color: black;
+    font-size: 3rem;
+    text-align: center;
+    background-color: #a7a9be;
+}
+
+#projects .projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    padding: 20px;
+    place-items: center;
+    max-width: 1200px;
+    margin: auto;
+   
+}
+.projects a:hover{
+    transition: 0.3s;
+    transform: scale(1.1);
+    
+    
+}
+
+
+
+#projects .project-tile {
+    
+    height: 250px;
+    width: calc(100% - 30px); 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    border-radius: 5px;
+    text-decoration: none;
+    border: 2px solid #0f0e17;
+}
+
+#projects .project-tile img {
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+}
+#projects .project-tile p {
+    background-color: #0f0e17;
+    width: 100%;
+    font-size: 1.4rem; 
+    text-align: center;
+    padding: 12px 0; 
+    font-weight: bold;
+    margin-top: 0; 
+    margin-bottom: 0; 
+    box-sizing: border-box; 
+    color: #fffffe;
+}
+
+
+
+.project-tile{
+    margin: auto;
+}
+#projects{
+    text-align: center;
+    
+}
+.show-all{
+    justify-content: center;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 10px ;
+    background-color: #ff8906;
+    color: #fffffe;
+    padding: 10px;
+    font-size: 1.9rem;
+    display: inline-block;
+}
+.show-all:hover{
+    transition:0.3s;
+    transform: scale(1.2);
+    background-color: red;
+}
+
+.service-tile {
+    text-align: justify;
+    color: rgb(255, 255, 255);
+    font-size: 1rem;
+    padding: 20px;
+    width: 30%;
+    margin: 0 1%;
+    display: inline-block;
+    flex: 1;
+    box-shadow: 2px 4px 20px rgb(52, 52, 52);
+    
+}
+.service-tile h6{
+    color: aqua;
+    font-size: 1.5rem;
+    padding: 10px;
+}
+.service-tile button{
+    background-color: #b8690e;
+    color: aliceblue;
+    padding: 5px;
+    font-size: 1.2rem;
+    font-family: 'Times New Roman', Times, serif;
+    border-radius: 10px;
+    
+}
+.service-tile p{
+    padding: 10px;
+    font-size: 1.3rem;
+}
+.service{
+    width: 100%;
+    text-align: center;
+    display:flex;
+    
+    margin-top: 100px;
+}
+
+.service-tile button:hover{
+    transition:0.3s;
+    transform: scale(1.2);
+    background-color: 0f0e17;
+}
+
+
+
+
+
+
+
+#contacts {
+    text-align: center;
+    padding: 50px 0; 
+    
+}
+#contacts p{
+    color: #a7a9be;
+    padding: 20px;
+    font-size: 1.5rem;
+    margin: auto;
+    padding: 50px;
+    max-width: 70%;
+
+}
+
+#contacts h3 {
+    color: black; 
+    font-size: 3rem;
+    text-align: center;
+    background-color: #a7a9be;
+    padding: 10px; 
+}
+
+#contacts .social-medias {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+    gap: 90px; 
+    max-width: 800px; 
+    margin: auto; 
+}
+
+#contacts .social-media {
+    text-decoration: none;
+    color: #ff8906; 
+    font-size: 1.5rem; 
+    display: flex;
+    align-items: center;
+    
+}
+
+#contacts .social-media:hover{
+    transform: translateY(10px);
+    transition: 0.3s;
+}
+
+#contacts .social-media img {
+    height: 100px; 
+    margin-right: 20px; 
+}
+
+footer{
+    padding: 20px;
+    color: #a7a9be;
+    font-size: 1.3rem;
+    text-align: center;
+    background-color: #161421;
+}
+
+
+
+/* Add a media query for screens smaller than 768px (typical tablet and mobile sizes) */
+/* Add a media query for screens smaller than 768px (typical tablet and mobile sizes) */
+@media screen and (max-width: 768px) {
+    #nav-bar {
+        padding: 5px 0; /* Reduce padding for smaller screens */
+    }
+
+    .nav-links {
+        display: flex;
+        flex-direction: column; /* Stack navigation links vertically */
+        position: absolute;
+        top: 50px; /* Position the links below the navbar */
+        left: 0;
+        background-color: #0f0e17;
+        width: 100%;
+        text-align: center;
+        z-index: 1; /* Ensure the navigation links appear above other content */
+    }
+
+    .nav-links li {
+        padding: 10px 0; /* Add vertical padding to each link */
+    }
+
+    .brand {
+        margin-left: 0; /* Center brand logo */
+        text-align: center;
+    }
+
+    #welcome-section h1 {
+        margin-right: auto;
+    }
+
+    #welcome-section #tagline {
+        margin-right: auto;
+    }
+
+    #profilepic {
+        margin-top: 10vh;
+        width: 80%;
+    }
+
+    .aboutme {
+        width: 90%; /* Adjust width for smaller screens */
+        margin-top: 5vh;
+    }
+
+    .content-container {
+        flex-direction: column; /* Stack content vertically */
+        align-items: center; /* Center items horizontally */
+    }
+
+    .service-tile {
+        width: 90%; /* Adjust width for smaller screens */
+        margin-bottom: 30px; /* Add space between service tiles */
+    }
+
+    #projects .projects {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Adjust grid for smaller screens */
+    }
+}
+
+/* Add a media query for screens smaller than 480px (typical mobile sizes) */
+@media screen and (max-width: 480px) {
+    #profilepic {
+        width: 280px; /* Adjust width for smaller screens */
+    }
+
+    #brand-name {
+        font-size: 1.8rem; /* Decrease font size for brand name */
+    }
+
+    #nav-bar {
+        padding: 1px 0; /* Reduce padding for smaller screens */
+        position: fixed;
+
+    }
+
+    .nav-links {
+        top: 30px; /* Position the links below the navbar */
+    }
+
+    .nav-links a {
+        padding: 0px 0; /* Add vertical padding to each link */
+        font-size: 1.3rem; /* Decrease font size for navigation links */
+    }
+
+
+    #welcome-section h1 {
+        margin:auto;
+        font-size: 3rem; /* Decrease font size for heading */
+        margin-top: 200px; /* Adjust margin for smaller screens */
+    }
+
+    #welcome-section #tagline {
+        font-size: 1.5rem; /* Decrease font size for tagline */
+    }
+
+    .aboutme {
+        width: 90%; /* Adjust width for smaller screens */
+        margin-top: 5vh;
+    }
+
+    .service {
+        flex-direction: column; /* Stack services vertically */
+        align-items: center; /* Center services horizontally */
+    }
+
+    .service-tile {
+        width: 90%; /* Adjust width for smaller screens */
+        margin-bottom: 20px; /* Add space between service tiles */
+    }
+
+    #contacts p {
+        max-width: 90%; /* Adjust max-width for smaller screens */
+    }
+
+    #contacts .social-medias {
+        max-width: 90%; /* Adjust max-width for smaller screens */
+        flex-wrap: wrap; /* Ensure social media icons wrap properly */
+        gap: 20px; /* Reduce gap between social media icons */
+    }
+
+    #contacts .social-media {
+        font-size: 1.2rem; /* Decrease font size for social media links */
+    }
+}
+
