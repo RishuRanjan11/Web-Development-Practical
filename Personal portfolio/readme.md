@@ -1,2 +1,2 @@
 # OUTPUT
-![]("output.gif")
+![Output of portfolio](output.gif)
